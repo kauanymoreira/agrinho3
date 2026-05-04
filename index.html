@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte | Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🌱 Agro Forte</h1>
+            <p>Futuro Sustentável</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Equilíbrio entre produção e meio ambiente</h2>
+                <p>Produzir mais, preservando sempre. O agro forte é a base do futuro sustentável.</p>
+                <button id="saibaMaisBtn" class="btn">Saiba mais</button>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Sobre a iniciativa</h2>
+            <div class="sobre-grid">
+                <div class="card">
+                    <h3>🌿 Produção responsável</h3>
+                    <p>Unimos tecnologia e respeito à natureza para uma agricultura produtiva e limpa.</p>
+                </div>
+                <div class="card">
+                    <h3>💧 Uso consciente da água</h3>
+                    <p>Sistemas de irrigação eficientes e captação de água da chuva.</p>
+                </div>
+                <div class="card">
+                    <h3>🌎 Neutralidade de carbono</h3>
+                    <p>Práticas que reduzem emissões e sequestram carbono no solo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="praticas" class="praticas">
+            <h2>Calculadora de Impacto Sustentável</h2>
+            <p>Informe os dados da sua propriedade e veja o impacto sustentável estimado.</p>
+            
+            <form id="impactoForm" class="form-impacto">
+                <div class="form-group">
+                    <label for="area">Área total (hectares):</label>
+                    <input type="number" id="area" name="area" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preservacao">Área de preservação (hectares):</label>
+                    <input type="number" id="preservacao" name="preservacao" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tecnologia">Nível de tecnologia sustentável:</label>
+                    <select id="tecnologia" name="tecnologia" required>
+                        <option value="">Selecione</option>
+                        <option value="basico">Básico (mínimo de práticas sustentáveis)</option>
+                        <option value="intermediario">Intermediário (algumas práticas sustentáveis)</option>
+                        <option value="avancado">Avançado (alta adoção de práticas sustentáveis)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Calcular Impacto</button>
+            </form>
+
+            <div id="resultadoImpacto" class="resultado-area"></div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Fale conosco</h2>
+            <p>Receba materiais exclusivos sobre agro sustentável.</p>
+            
+            <form id="contatoForm" class="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Compartilhe sua experiência ou dúvida sobre agro sustentável..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar mensagem</button>
+            </form>
+
+            <div id="feedbackContato" class="feedback-area"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Agro Forte, Futuro Sustentável | Cultivando o amanhã com responsabilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
